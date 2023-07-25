@@ -1,0 +1,231 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Color stack*/
+:root {
+    --Pale-blue: hsl(227, 64%, 95%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(228, 100%, 99%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: #e0e8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* wrapper main*/
+.container {
+    background-color: var(--Very-pale-blue);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+
+/* img*/
+.img-main img {
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*main-text*/
+.main-text {
+    display: flex;
+    flex-direction: column;
+}
+/*headings*/
+.heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    font-family:'red hat display', sans-serif;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    padding: 30px 0px;
+}
+
+.heading p {
+    font-family: 'red hat display', sans-serif;
+    font-weight: 600;
+    color: var(--Desaturated-blue);
+    padding: 2px 75px
+}
+
+/*Subscription card*/
+.sub-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 450px;
+}
+
+/*Card-main*/
+.card-main {
+    background-color: var(--Pale-blue); 
+    margin: 35px 0px;
+    padding: 15px 0px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+
+}
+/*Card-img*/
+.card-img {
+    margin-left: 20px;
+    width:15%;
+}
+
+.card-img img {
+    width: 70px;
+    height: 70px;
+}
+
+/*Card-items*/
+.opt{
+    color: var(--Bright-blue);
+    margin-left: 25%;
+    font-size: 18px;
+    font-family:'red hat display', sans-serif;
+    font-weight: 600;
+   
+
+}
+     
+.pricing {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 7px;
+}
+
+.pricing h3 {
+    font-family:'red hat display', sans-serif;
+    font-weight: 600 ;
+    color: var(--Dark-blue);
+    padding-bottom: 5px;
+}
+
+.pricing p {
+    font-family:'red hat display', sans-serif ;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+
+}
+
+/*Buttons*/
+.btn-main {
+    height: 200px;
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+.btn-group {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn:hover {
+   transform: scale(0.98);
+}
+
+.btn {
+    font-family: 'red hat display', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color:var(--Bright-blue);
+    margin: 10px;
+    border: 0px;
+    height: 60px;
+    width: 440px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: #dcd8f9 0px 30px 30px 0.3px;
+    
+}
+
+.btn-2:hover{
+    cursor: pointer;
+}
+.btn-2 {
+    font-family: 'red hat display', sans-serif;
+    font-weight: 600;
+    color: var(--Desaturated-blue);
+    margin: 20px 0px;
+    padding-bottom: 20px 0px;
+    background-color: transparent;
+    height: 60px;
+    width: 440px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    margin: 60px;
+}
+
+
+/*Media Qaries*/
+@media (max-width:375px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-main img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .card-main {
+        display: flex;
+        align-items: center;
+        align-items: center;
+            
+        }
+
+}
